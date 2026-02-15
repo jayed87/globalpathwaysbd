@@ -116,41 +116,6 @@ npm start
 
 ---
 
-## 🌐 Deploy to GitHub Pages
-
-Since this is a Next.js app, you need to export it as static HTML for GitHub Pages:
-
-### Step 1 — Configure static export
-
-Add `output: 'export'` to `next.config.ts`:
-
-```ts
-const nextConfig = {
-  output: 'export',
-  basePath: '/globalpathwaysbd',  // match your repo name
-  images: { unoptimized: true },
-};
-export default nextConfig;
-```
-
-### Step 2 — Build and deploy
-
-```bash
-npm run build
-```
-
-The static site will be generated in the `out/` folder.
-
-### Step 3 — Enable GitHub Pages
-
-1. Push the `out/` folder to a `gh-pages` branch, or use [GitHub Actions](https://github.com/actions/deploy-pages)
-2. Go to **Settings → Pages → Source** and select the branch
-3. Your site will be live at `https://YOUR_USERNAME.github.io/globalpathwaysbd/`
-
-> **Tip:** You can also use the [`gh-pages`](https://www.npmjs.com/package/gh-pages) npm package for automated deployment.
-
----
-
 ## 🎨 Theme & Colors
 
 The site uses a cohesive brand palette defined in `src/app/globals.css`:
